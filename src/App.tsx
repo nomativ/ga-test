@@ -31,9 +31,9 @@ function App() {
 
   return (
     <>
-      <div className="flex items-center gap-2">
+      <div className={`flex items-center gap-2 border ${isGAConnected ? 'border-green-300' : 'border-red-300'} p-4 rounded-full`}>
         <div className={`w-3 h-3 rounded-full ${isGAConnected ? 'bg-green-500' : 'bg-red-500'}`}></div>
-        <p> hi, if this light is green, ga is connected </p>
+        <p> hi, if this light is green, ga is installed </p>
       </div>
     </>
   )
