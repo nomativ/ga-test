@@ -7,9 +7,8 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <MixpanelClient>
-      <Analytics />
-      <App />
-    </MixpanelClient>
+    <MixpanelClient />
+    <Analytics />
+    <App />
   </StrictMode>,
 )
